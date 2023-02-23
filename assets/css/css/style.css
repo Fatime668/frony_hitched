@@ -1,0 +1,831 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.message {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px 0;
+  z-index: 4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1490196078);
+  display: none;
+}
+.message a i {
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.message a i svg {
+  width: 18px;
+  fill: #74509b;
+}
+.message button {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #74509b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+main #grovHouse {
+  padding: 20px 0 20px;
+}
+main #grovHouse .container .wishlist {
+  display: flex;
+  align-items: center;
+}
+main #grovHouse .container .wishlist .save button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+main #grovHouse .container .wishlist .save button svg {
+  height: 20px;
+  margin-right: 5px;
+}
+main #grovHouse .container .wishlist .save button span {
+  transition: 0.1s ease-in-out;
+}
+main #grovHouse .container .wishlist .save button:hover span {
+  border-bottom: 2px solid #222;
+}
+main #grovHouse .container .title {
+  color: #222;
+  margin: 0 0 8px;
+}
+main #grovHouse .container .title h1 {
+  font-size: 22px;
+  margin: 0 11px 0 0;
+}
+main #grovHouse .container .contact {
+  margin: 0 0 10.4px;
+  display: flex;
+  flex-wrap: wrap !important;
+  align-items: center;
+}
+main #grovHouse .container .contact span {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+main #grovHouse .container .contact ul {
+  display: flex;
+  flex-wrap: wrap !important;
+  align-items: center;
+  margin-left: 5px;
+  margin-bottom: 3px;
+}
+main #grovHouse .container .contact ul li {
+  padding: 0 15px;
+  position: relative;
+}
+main #grovHouse .container .contact ul li a {
+  font-size: 14px;
+  color: #222;
+  border-bottom: 2px solid #222;
+}
+main #grovHouse .container .contact ul li::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 2.5px;
+  left: 2px;
+  bottom: 7px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+main #grovHouse .container .price ul {
+  display: flex;
+  align-items: center;
+}
+main #grovHouse .container .price ul li {
+  font-size: 14px;
+  padding-right: 10px;
+}
+main #grovHouse .container .price ul li span {
+  margin-left: 5px;
+  font-weight: bold;
+}
+main #slider-section .container .slider {
+  width: 100%;
+  position: relative;
+}
+main #slider-section .container .slider .owl-nav .owl-prev, main #slider-section .container .slider .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: #fff;
+  transition: 0.2s ease-in;
+}
+main #slider-section .container .slider .owl-nav .owl-prev {
+  left: 10px !important;
+}
+main #slider-section .container .slider .owl-nav .owl-next {
+  right: 10px !important;
+}
+main #slider-section .container .slider .item img {
+  width: 99.5%;
+  height: 550px;
+}
+main #slider-section .container .sticky-form {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 24px 24px 8px;
+  box-shadow: 0px 0px 6px 0px #ccc;
+  border-radius: 7px;
+  width: 320px;
+  height: 597.88px;
+}
+main #slider-section .container .sticky-form h2 {
+  font-size: 18px;
+  margin: 0 0 8px;
+  color: #222;
+}
+main #slider-section .container .sticky-form .leadform {
+  margin: 0 -16px;
+  padding: 2px 16px;
+  position: relative;
+}
+main #slider-section .container .sticky-form .leadform .textarea {
+  position: relative;
+  text-indent: 0;
+  padding: 1.63rem 0.63rem 0.63rem;
+  height: 5.7rem;
+  border: 1px solid #ccc;
+  border-radius: 0.31rem;
+  margin-bottom: -1.2rem;
+  transition: box-shadow -24.8s;
+  line-height: 26px;
+  overflow-x: hidden;
+  width: 100%;
+}
+main #slider-section .container .sticky-form .leadform .area_field {
+  position: absolute;
+  top: 10px;
+  left: -100px;
+  z-index: 5;
+  font-size: 10px;
+  width: 100%;
+  z-index: 1;
+}
+main #slider-section .container .sticky-form .leadform .area_field::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 86%;
+  height: 20px;
+  left: 117px;
+  top: -7px;
+  z-index: -1;
+}
+main #slider-section .container .sticky-form .leadform .textarea:focus {
+  box-shadow: 0 0 0 1px #1961D9, inset 0 0 0 40px #fff;
+}
+main #slider-section .container .sticky-form .leadform .inputBox {
+  position: relative;
+  background-color: #fff;
+  margin: 30px 0 -19.2px;
+}
+main #slider-section .container .sticky-form .leadform .inputBox i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+main #slider-section .container .sticky-form .leadform .inputBox i svg {
+  height: 15px;
+  color: #ccc;
+}
+main #slider-section .container .sticky-form .leadform .inputBox input {
+  padding: 0.63rem;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+main #slider-section .container .sticky-form .leadform .inputBox input:valid ~ label,
+main #slider-section .container .sticky-form .leadform .inputBox input:focus ~ label {
+  color: #000;
+  transform: translateX(-10px);
+  transform: translateY(-24px);
+  font-size: 10px;
+  font-weight: bold;
+}
+main #slider-section .container .sticky-form .leadform .inputBox label {
+  position: absolute;
+  left: 15px;
+  top: 1.8rem;
+  font-size: 14;
+  transform: translateY(-50%);
+  transform-origin: left top;
+  color: #6c6c6c;
+  pointer-events: none;
+  transition: 0.3s;
+}
+main #slider-section .container .sticky-form .leadform .inputBox input:focus {
+  border: 2px solid #1961D9;
+}
+main #slider-section .container .sticky-form .leadform #send {
+  position: absolute;
+  margin: 16px 0 0;
+  padding: 0.89rem 1rem;
+  background: #714d98;
+  color: #fff;
+  border: none;
+  bottom: -95px;
+  font-weight: bold;
+  left: 16px;
+  border-radius: 10px;
+  width: 90%;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+main #slider-section .container .sticky-form .leadform #send:hover {
+  background-color: #573779;
+}
+main #navigation-section {
+  width: 100%;
+  background-color: #fff;
+}
+main #navigation-section .container nav {
+  border-bottom: 1px solid #ccc;
+}
+main #navigation-section .container nav ul {
+  display: flex;
+  margin: 0 0 -16px;
+  padding: 0 0 16px;
+}
+main #navigation-section .container nav ul li a {
+  margin: 2px;
+  padding: 13.6px 12px;
+  font-size: 16px;
+  color: #222;
+  display: inline-block;
+}
+main #navigation-section .container nav ul li a .count {
+  color: #6c6c6c;
+}
+main #about-section .container .about {
+  padding: 32px 0 56px;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+main #about-section .container .about h2 {
+  margin: 0 0 16px;
+  font-size: 19px;
+  color: #000;
+}
+main #about-section .container .about p {
+  margin: 0 0 8px;
+  font-size: 15px;
+  line-height: 24px;
+}
+main #about-section .container .about p strong {
+  color: #000;
+}
+main #about-section .container .about .social {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+main #about-section .container .about .social p {
+  font-size: 14px;
+  margin: 0 15px 0 0;
+}
+main #about-section .container .about .social a {
+  color: #000;
+  transition: 0.2s ease-in;
+}
+main #about-section .container .about .social a i {
+  font-size: 22px;
+}
+main #about-section .container .about .social a:hover {
+  color: #573779;
+}
+main #faq-section {
+  padding: 0 0 56px;
+}
+main #faq-section .container h2 {
+  font-size: 19px;
+  margin: 0 0 8px;
+  color: #222;
+}
+main #faq-section .container .faqs-container {
+  padding: 16px 0;
+  display: none;
+}
+main #faq-section .container .faqs-container h3 {
+  font-size: 18px;
+  padding: 0 0 4px;
+  color: #222;
+  margin-bottom: 20px;
+}
+main #faq-section .container .faqs-container .faqs-item {
+  -moz-columns: 250px 3;
+       columns: 250px 3;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+main #faq-section .container .faqs-container .faqs-item .item-content ul li {
+  font-size: 14px;
+  padding: 5px 0;
+  color: #444;
+}
+main #faq-section .container .faqs-container .faqs-item .item-content ul li i {
+  margin-right: 5px;
+}
+main #faq-section .container .faqs-container .faqs-item .item-content ul li i svg {
+  height: 11px;
+  fill: #48964d;
+}
+main #faq-section .container .more-faq {
+  text-align: center;
+  margin: 20px 0;
+}
+main #faq-section .container .more-faq button {
+  color: #444;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #ccc;
+  transition: 0.3s ease-in;
+}
+main #faq-section .container .more-faq button:hover {
+  border: 1px solid #444;
+}
+main #faq-section .question {
+  display: grid;
+  align-items: center;
+  position: relative;
+  margin-top: 2.5rem;
+  padding: 1.25rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 0.5rem;
+  grid-template-columns: 4rem auto;
+  grid-column-gap: 0.88rem;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+main #faq-section .question .question-icon img {
+  width: 4rem;
+  height: 4rem;
+  background-color: #e4f4f4;
+  border-radius: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #faq-section .question .question-title p {
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+main #faq-section .question .question-title span {
+  color: #573779;
+}
+main #faq-section .question:hover {
+  box-shadow: 0px 2px 9px #444;
+}
+main #deal-section {
+  padding: 30px 0;
+}
+main #deal-section .container .badges {
+  margin: 0 0 34px;
+  font-size: 19px;
+}
+main #deal-section .container .img {
+  display: flex;
+  flex-wrap: wrap;
+}
+main #deal-section .container .img img {
+  margin: 10px 0;
+}
+main #deal-section .container .deal-imgs {
+  padding: 30px 0 50px;
+}
+main #deal-section .container .deal-imgs .img img {
+  width: 125px;
+  margin-right: 10px;
+}
+main #deal-section .container .discount .deal {
+  margin-bottom: 30px;
+  font-size: 19px;
+}
+main #deal-section .container .discount .discount-img {
+  display: flex;
+  align-items: center;
+  margin: 24px 0 0;
+  padding: 0 0 24px;
+}
+main #deal-section .container .discount .discount-img .discount-details span {
+  font-size: 13px;
+  color: #6c6c6c;
+  padding: 0 0 8px;
+  display: inline-block;
+}
+main #deal-section .container .discount .discount-img .discount-details h2 {
+  font-size: 15px;
+  padding: 0 0 8px;
+  transition: 0.2s ease-in;
+}
+main #deal-section .container .discount .discount-img .discount-details h2:hover {
+  color: #714d98;
+}
+main #deal-section .container .discount .discount-img .discount-details .description-discount {
+  display: flex;
+  margin-bottom: 20px;
+}
+main #deal-section .container .discount .discount-img .discount-details .description-discount p {
+  font-size: 14px;
+}
+main #deal-section .container .discount .discount-img .img {
+  margin-right: 30px;
+}
+main #deal-section .container .discount .discount-img .img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+}
+main #deal-section .container .discount .expires {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 110px;
+}
+main #deal-section .container .discount .expires span {
+  font-size: 14px;
+  color: #6c6c6c;
+}
+main #deal-section .container .discount .expires button {
+  color: #714d98;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #714d98;
+  transition: 0.3s ease-in;
+}
+main #deal-section .container .discount .expires button:hover {
+  background-color: #714d98;
+  color: #fff;
+}
+main #preferred-section {
+  padding: 50px 0;
+}
+main #preferred-section .container h2 {
+  margin: 0 0 34px;
+  font-size: 19px;
+}
+main #preferred-section .container .btn {
+  display: flex;
+  justify-content: center;
+}
+main #preferred-section .container .btn a {
+  padding: 15px 25px;
+  border-radius: 10px;
+  color: #222;
+  transition: 0.3s ease-in;
+}
+main #preferred-section .container .btn a:hover {
+  background-color: #222;
+  color: #fff;
+}
+main #preferred-section .container .carousel .preferred-item {
+  margin: 15px 0;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px 2px #ccc;
+}
+main #preferred-section .container .carousel .preferred-item .img {
+  width: 100%;
+}
+main #preferred-section .container .carousel .preferred-item .img img {
+  width: 100%;
+  height: 200px;
+}
+main #preferred-section .container .carousel .txt {
+  padding: 12px 16px 16px;
+}
+main #preferred-section .container .carousel .txt h3 {
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+main #preferred-section .container .carousel .txt h3 a {
+  color: #222;
+}
+main #preferred-section .container .carousel .txt span {
+  font-size: 15px;
+}
+main #preferred-section .container .carousel .txt .txt-item {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #preferred-section .container .carousel .txt .txt-item span {
+  display: flex;
+  font-size: 14px;
+}
+main #preferred-section .container .carousel .txt .txt-item span img {
+  margin-right: 5px;
+  width: 15px;
+}
+main #preferred-section .container .carousel .slick-dots {
+  display: none !important;
+}
+main #map-section {
+  padding: 30px 0;
+}
+main #map-section .container .map-item h2 {
+  margin: 0 0 34px;
+  font-size: 19px;
+}
+main #map-section .container .map-item p {
+  margin: 0 0 12.8px;
+}
+main #map-section .container .map-item .map-img img {
+  width: 100%;
+}
+main #map-section .container .visit {
+  display: grid;
+  align-items: center;
+  position: relative;
+  margin-top: 2.5rem;
+  padding: 1.25rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 0.5rem;
+  grid-template-columns: 4rem auto;
+  grid-column-gap: 0.88rem;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+main #map-section .container .visit .visit-icon img {
+  width: 4rem;
+  height: 4rem;
+  background-color: #e4f4f4;
+  border-radius: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #map-section .container .visit .visit-title p {
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+main #map-section .container .visit .visit-title span {
+  color: #573779;
+}
+main #map-section .container .visit:hover {
+  box-shadow: 0px 2px 9px #444;
+}
+main #map-section .container .rotates {
+  padding: 30px 0;
+}
+main #map-section .container .rotates ul {
+  display: flex;
+  flex-wrap: wrap !important;
+}
+main #map-section .container .rotates ul li {
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+main #map-section .container .rotates ul li a {
+  font-size: 12px;
+  color: #444;
+}
+main #wedding-section {
+  padding-bottom: 200px;
+}
+main #wedding-section h2 {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+main #wedding-section h3 a {
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+main #wedding-section ul {
+  display: flex;
+  flex-wrap: wrap !important;
+  justify-content: space-between;
+}
+main #wedding-section ul li {
+  padding: 5px 0;
+  position: relative;
+}
+main #wedding-section ul li.after::after {
+  width: 0;
+  height: 0;
+}
+main #wedding-section ul li::after {
+  content: "";
+  position: absolute;
+  color: #000;
+  background-color: #444;
+  width: 2px;
+  height: 2px;
+  bottom: 12px;
+  left: -9px;
+}
+main #wedding-section ul li a {
+  font-size: 13px;
+  color: #444;
+}
+
+@media screen and (max-width: 1024px) {
+  #faq-section .faqs-container .faqs-item {
+    grid-template-columns: 4rem auto;
+    grid-column-gap: 0.88rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .save svg {
+    width: 20px;
+  }
+  .save button span {
+    font-size: 12px !important;
+  }
+  .message {
+    display: block !important;
+  }
+  #slider-section .slider .item img {
+    height: 300px !important;
+  }
+  #slider-section .sticky-form {
+    display: none !important;
+  }
+  .map-img iframe {
+    height: 300px !important;
+  }
+}
+@media screen and (max-width: 752px) {
+  #grovHouse .title h1 {
+    font-size: 15px !important;
+  }
+  #grovHouse .contact span {
+    font-size: 13px !important;
+  }
+  #grovHouse .contact ul li {
+    margin: 10px 0 !important;
+  }
+  #grovHouse .contact ul li a {
+    font-size: 13px !important;
+  }
+  #grovHouse .price ul li {
+    font-size: 12px !important;
+  }
+  #navigation-section ul li a {
+    font-size: 14px !important;
+  }
+  .about h2 {
+    font-size: 15px !important;
+  }
+  .about p {
+    font-size: 13px !important;
+  }
+  #faq-section h2 {
+    font-size: 15px !important;
+  }
+  #faq-section h3 {
+    font-size: 15px !important;
+  }
+  #faq-section .faqs-container ul li {
+    font-size: 13px !important;
+  }
+  #faq-section .faqs-container .faqs-item {
+    display: flex;
+    -moz-columns: 0px 3 !important;
+         columns: 0px 3 !important;
+    -moz-column-gap: 1rem !important;
+         column-gap: 1rem !important;
+  }
+  .question-icon img {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  .question-title p {
+    font-size: 14px !important;
+  }
+  .question-title span {
+    font-size: 14px !important;
+  }
+  .visit-icon img {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  .visit-title p {
+    font-size: 14px !important;
+  }
+  .visit-title span {
+    font-size: 14px !important;
+  }
+  #wedding-section h2 {
+    font-size: 15px !important;
+  }
+  #wedding-section h3 {
+    font-size: 15px !important;
+  }
+  #wedding-section ul li {
+    margin: 2px !important;
+  }
+  #wedding-section ul li a {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 638px) {
+  .save svg {
+    width: 23px !important;
+  }
+  #slider-section .slider .owl-next, #slider-section .slider .owl-prev {
+    font-size: 35px !important;
+  }
+  #slider-section .slider .item img {
+    height: 200px !important;
+  }
+  #slider-section .sticky-form {
+    display: none !important;
+  }
+  .more-faq button {
+    width: 100% !important;
+  }
+  .discount-details span {
+    font-size: 12px !important;
+  }
+  .discount-details h2 {
+    font-size: 14px !important;
+  }
+  .discount-details .description-discount {
+    position: absolute !important;
+    left: 40px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .discount-details .description-discount p {
+    font-size: 12px !important;
+  }
+  .expires {
+    padding-left: 0px !important;
+    flex-wrap: wrap !important;
+  }
+  .expires span {
+    font-size: 12px !important;
+  }
+  .expires button {
+    margin: 20px 0 !important;
+    width: 100% !important;
+  }
+  #preferred-section h2 {
+    font-size: 15px !important;
+  }
+  #preferred-section .preferred-item .txt a {
+    font-size: 13px !important;
+  }
+  #preferred-section .preferred-item .txt span {
+    font-size: 14px !important;
+  }
+  #preferred-section .btn {
+    width: 100% !important;
+  }
+  #preferred-section .btn a {
+    font-size: 14px !important;
+    text-align: center;
+    width: 100% !important;
+  }
+  #map-section .map-item h2 {
+    font-size: 15px !important;
+    margin-bottom: 10 px !important;
+  }
+  #map-section .map-item p {
+    font-size: 13px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
